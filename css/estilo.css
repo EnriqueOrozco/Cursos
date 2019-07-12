@@ -1,0 +1,183 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background: url("../imagenes/0.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+/*--- Cuerpo ---*/
+
+.container
+{
+	color: #fff;
+	width: 100%;
+	max-width: 500px;
+	margin: 48px auto;
+	border-radius: 5px;
+	position: relative;
+	/*padding: 40px;*/
+	background: rgba(0,0,0, .7);
+}
+
+	.container h2
+	{
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0 0 28px 0;
+
+	}
+
+.sub-container
+{
+	width: 350px;
+	margin: 10px auto;
+	padding: 35px 50px;
+	border-radius: 5px;
+	background: rgba(0,0,0, .7);
+}
+
+	.s-part
+	{
+		color: #fff;
+		font-weight: 400;
+		text-align: center;
+		font-family: 'Segoe UI', monospace;
+	}
+
+		.s-part a
+		{
+			color: #3897f0;
+			cursor: pointer;
+			font-weight: 400;
+			font-family: 'Segoe UI', monospace;
+		}
+
+.error
+{
+	margin: 20px
+}
+
+	.sub-error
+	{
+		color: #fff;
+		text-align: center;
+		font-family: 'Segoe UI', monospace;
+	}
+
+.login
+{
+	display: none;
+	padding: 40px;
+}
+	
+	.login:nth-child(2)
+	{
+		display: block;
+	}
+
+.recover-password
+{
+	width: 100%;
+	padding: 15px 0;
+	cursor: pointer;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Segoe UI', monospace;
+	background-color: rgba(98, 74, 61,.7);
+}
+
+	a .recover-password
+	{
+		color: #fff;
+		font-weight: 16px;
+	}
+
+		a:hover .recover-password
+		{
+			background-color: rgba(78, 113, 75, 0.7);
+		}
+
+/*--- Fin del Cuerpo ---*/
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+	color: #fff;
+	width: 100%;
+	border: none;
+	outline: none;
+	display: block;
+	font-size: 14px;
+	border-radius: 2px;
+	padding: 10px 15px;
+	margin: 0 0 20px 0;
+	font-weight: normal;
+	font-family: Roboto;
+	box-sizing: border-box;
+	transition: all .5s ease;
+	background: rgba(0,0,0, .5);
+	border-bottom: 4px solid #f5f5dc;
+}
+
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus
+	{
+		border-bottom: 4px solid #4e714b;
+	}
+
+input[type="submit"]
+{
+	color: #fff;
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	padding: 10px 0;
+	cursor: pointer;
+	font-weight: normal;
+	font-family: Roboto;
+	background: #624a3d;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+	input[type="submit"]:hover
+	{
+		background: rgba(78, 113, 75, 0.7);
+	}
+
+/*--- RESPONSIVE ---*/
+
+@media only screen and (min-width: 200px) and (max-width: 800px)
+{
+
+	body
+	{
+		height: 650px;
+		background: url("../imagenes/0.jpg");
+		background-size: cover;
+	}
+
+	.container
+	{
+		width: 95%;
+	}
+}
